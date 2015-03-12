@@ -5,6 +5,12 @@ if(_){
  console.log("lodash is defined!");
 }
 
+var favoriteAnimals = [ "elephant", "penguin", "eagle", "camel" ],
+nextAnimal;
+
+nextAnimal = _.sample(favoriteAnimals);
+assert(nextAnimal, "Assign something to nextAnimal");
+
 // ************* HELPER **************
 function assert(expression, failureMessage) {
   if (!expression) {
